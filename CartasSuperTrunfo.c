@@ -48,6 +48,10 @@ int main() {
     printf("Digite o Ponto turiscico (sem espacos): ");
     scanf("%d", &turismo1); // Inteiros usam %d e precisam do '&'
 
+    // Processamento de Dados Carta 1
+    float densidadePopulacao1 = (float) populacao1 / area1;  
+    float pibPerCapta1 = (float) pib1 / populacao1;
+
     // ENTRADA DE DADOS: CARTA 2
     printf("Cadastro da Carta 2\n");
 
@@ -78,11 +82,15 @@ int main() {
     // 7. Lendo os Pontos Turisticos
     printf("Digite o Ponto turiscico (sem espacos): ");
     scanf("%d", &turismo2); // Inteiros usam %d e precisam do '&'
+
+    // Processamento de dados da Carta 2
+    float densidadePopulacao2 = (float) populacao2 / area2;
+    float pibPerCapta2 = (float) pib2 / populacao2;
   
   // Área para exibição dos dados da cidade
 
   // Carta 01
-  printf("Carta 01\n");
+  printf("*** Carta 01 ***\n");
 
   // Mostrando um char (%c)
   printf("Estado: %c\n", estado1);
@@ -105,8 +113,14 @@ int main() {
   // Mostrando um inteiro (%d)
   printf("Numero de pontos turisticos: %d\n", turismo1);
 
+  // Mostrando a Densidade Populacional
+  printf("Densidade Populaciona: %.2f habitantes por km²\n", densidadePopulacao1);
+
+  // Mostrando a PIB Per Capta
+  printf("PIB per Capita: %.2f de riqueza por pessoa\n", pibPerCapta1);
+
   // Carta 02
-  printf("Carta 02\n");
+  printf("*** Carta 02 ***\n");
 
   // Mostrando um char (%c)
   printf("Estado: %c\n", estado2);
@@ -128,6 +142,12 @@ int main() {
 
   // Mostrando um inteiro (%d)
   printf("Numero de pontos turisticos: %d\n", turismo2);
+
+  // Mostrando a Densidade Populacional
+  printf("Densidade Populaciona: %.2f habitantes por km²\n", densidadePopulacao2);
+
+  // Mostrando a PIB Per Capta
+  printf("PIB per Capita: %.2f de riqueza por pessoa\n", pibPerCapta2);
   
 return 0;
 } 
